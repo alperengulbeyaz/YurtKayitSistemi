@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBolumler));
             this.PcbBolumEkle = new System.Windows.Forms.PictureBox();
             this.PcbBolumSil = new System.Windows.Forms.PictureBox();
-            this.PcbBolumDuzenle = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtBolumid = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,12 +43,13 @@
             this.yurtKayitDataSet = new WindowsFormsApp1.YurtKayitDataSet();
             this.bolumlerTableAdapter = new WindowsFormsApp1.YurtKayitDataSetTableAdapters.BolumlerTableAdapter();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.PcbBolumDuzenle = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PcbBolumEkle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcbBolumSil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PcbBolumDuzenle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumlerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcbBolumDuzenle)).BeginInit();
             this.SuspendLayout();
             // 
             // PcbBolumEkle
@@ -75,18 +75,6 @@
             this.PcbBolumSil.TabStop = false;
             this.toolTip1.SetToolTip(this.PcbBolumSil, "Bölüm Sil");
             this.PcbBolumSil.Click += new System.EventHandler(this.PcbBolumSil_Click);
-            // 
-            // PcbBolumDuzenle
-            // 
-            this.PcbBolumDuzenle.Image = ((System.Drawing.Image)(resources.GetObject("PcbBolumDuzenle.Image")));
-            this.PcbBolumDuzenle.Location = new System.Drawing.Point(352, 126);
-            this.PcbBolumDuzenle.Name = "PcbBolumDuzenle";
-            this.PcbBolumDuzenle.Size = new System.Drawing.Size(81, 54);
-            this.PcbBolumDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PcbBolumDuzenle.TabIndex = 2;
-            this.PcbBolumDuzenle.TabStop = false;
-            this.toolTip1.SetToolTip(this.PcbBolumDuzenle, "Bölüm Düzenle");
-            this.PcbBolumDuzenle.Click += new System.EventHandler(this.PcbBolumDuzenle_Click);
             // 
             // label1
             // 
@@ -172,6 +160,18 @@
             // 
             this.bolumlerTableAdapter.ClearBeforeFill = true;
             // 
+            // PcbBolumDuzenle
+            // 
+            this.PcbBolumDuzenle.Image = ((System.Drawing.Image)(resources.GetObject("PcbBolumDuzenle.Image")));
+            this.PcbBolumDuzenle.Location = new System.Drawing.Point(352, 126);
+            this.PcbBolumDuzenle.Name = "PcbBolumDuzenle";
+            this.PcbBolumDuzenle.Size = new System.Drawing.Size(81, 54);
+            this.PcbBolumDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PcbBolumDuzenle.TabIndex = 2;
+            this.PcbBolumDuzenle.TabStop = false;
+            this.toolTip1.SetToolTip(this.PcbBolumDuzenle, "Bölüm Düzenle");
+            this.PcbBolumDuzenle.Click += new System.EventHandler(this.PcbBolumDuzenle_Click);
+            // 
             // FrmBolumler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,15 +185,16 @@
             this.Controls.Add(this.PcbBolumDuzenle);
             this.Controls.Add(this.PcbBolumSil);
             this.Controls.Add(this.PcbBolumEkle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmBolumler";
             this.Text = "Bölümler";
             this.Load += new System.EventHandler(this.FrmBolumler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PcbBolumEkle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcbBolumSil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PcbBolumDuzenle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumlerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcbBolumDuzenle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,7 +204,6 @@
 
         private System.Windows.Forms.PictureBox PcbBolumEkle;
         private System.Windows.Forms.PictureBox PcbBolumSil;
-        private System.Windows.Forms.PictureBox PcbBolumDuzenle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtBolumid;
         private System.Windows.Forms.Label label2;
@@ -215,5 +215,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn bolumidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bolumAdDataGridViewTextBoxColumn;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.PictureBox PcbBolumDuzenle;
     }
 }
