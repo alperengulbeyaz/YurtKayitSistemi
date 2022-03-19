@@ -38,18 +38,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TxtBolumAd = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yurtKayitDataSet = new WindowsFormsApp1.YurtKayitDataSet();
-            this.bolumlerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bolumlerTableAdapter = new WindowsFormsApp1.YurtKayitDataSetTableAdapters.BolumlerTableAdapter();
             this.bolumidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bolumAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bolumlerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtKayitDataSet = new WindowsFormsApp1.YurtKayitDataSet();
+            this.bolumlerTableAdapter = new WindowsFormsApp1.YurtKayitDataSetTableAdapters.BolumlerTableAdapter();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.PcbBolumEkle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcbBolumSil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcbBolumDuzenle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumlerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // PcbBolumEkle
@@ -141,20 +141,6 @@
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // yurtKayitDataSet
-            // 
-            this.yurtKayitDataSet.DataSetName = "YurtKayitDataSet";
-            this.yurtKayitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bolumlerBindingSource
-            // 
-            this.bolumlerBindingSource.DataMember = "Bolumler";
-            this.bolumlerBindingSource.DataSource = this.yurtKayitDataSet;
-            // 
-            // bolumlerTableAdapter
-            // 
-            this.bolumlerTableAdapter.ClearBeforeFill = true;
-            // 
             // bolumidDataGridViewTextBoxColumn
             // 
             this.bolumidDataGridViewTextBoxColumn.DataPropertyName = "Bolumid";
@@ -172,6 +158,20 @@
             this.bolumAdDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bolumAdDataGridViewTextBoxColumn.Name = "bolumAdDataGridViewTextBoxColumn";
             // 
+            // bolumlerBindingSource
+            // 
+            this.bolumlerBindingSource.DataMember = "Bolumler";
+            this.bolumlerBindingSource.DataSource = this.yurtKayitDataSet;
+            // 
+            // yurtKayitDataSet
+            // 
+            this.yurtKayitDataSet.DataSetName = "YurtKayitDataSet";
+            this.yurtKayitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bolumlerTableAdapter
+            // 
+            this.bolumlerTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmBolumler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,6 +185,9 @@
             this.Controls.Add(this.PcbBolumDuzenle);
             this.Controls.Add(this.PcbBolumSil);
             this.Controls.Add(this.PcbBolumEkle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmBolumler";
             this.Text = "Bölümler";
             this.Load += new System.EventHandler(this.FrmBolumler_Load);
@@ -192,8 +195,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcbBolumSil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcbBolumDuzenle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumlerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

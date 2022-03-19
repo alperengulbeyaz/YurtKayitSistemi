@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaForm.Designer.cs">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBolumler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,11 +66,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglantim.cs" />
     <Compile Include="YurtKayitDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtKayitDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="YurtKayitDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAnaForm.resx">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +114,17 @@
     </None>
     <None Include="YurtKayitDataSet.xss">
       <DependentUpon>YurtKayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet1.xsc">
+      <DependentUpon>YurtKayitDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet1.xss">
+      <DependentUpon>YurtKayitDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
