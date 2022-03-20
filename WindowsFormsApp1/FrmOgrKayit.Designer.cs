@@ -278,6 +278,7 @@
             this.label12.Size = new System.Drawing.Size(51, 16);
             this.label12.TabIndex = 17;
             this.label12.Text = "label12";
+            this.label12.Visible = false;
             // 
             // FrmOgrKayit
             // 
