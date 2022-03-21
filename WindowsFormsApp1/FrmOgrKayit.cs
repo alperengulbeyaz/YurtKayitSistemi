@@ -91,6 +91,14 @@ namespace WindowsFormsApp1
                 MessageBox.Show("HATA! Lütfen yeniden deneyiniz");
             }
 
+            //Öğrenci Oda Kontenjanını Arttırma
+
+            SqlCommand komutoda = new SqlCommand("update Odalar set OdaAktif=OdaAktif+1 where OdaNo=@oda1", bgl.baglanti());
+            komutoda.Parameters.AddWithValue("@oda1", CmbOdaNo.Text);
+            komutoda.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+
         }
     }
 }

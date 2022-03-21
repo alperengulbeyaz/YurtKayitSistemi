@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-         
+        
         private void FrmOgrListe_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'yurtKayitDataSet3.Ogrenci' table. You can move, or remove it, as needed.
@@ -43,6 +43,9 @@ namespace WindowsFormsApp1
             fr.adres = dataGridView1.Rows[secilen].Cells[11].Value.ToString();
             fr.Show();
             
+
         }
-    }
+        
+        }
+    
 }

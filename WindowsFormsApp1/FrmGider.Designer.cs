@@ -52,7 +52,7 @@
             this.TxtElektirik.Location = new System.Drawing.Point(144, 36);
             this.TxtElektirik.Name = "TxtElektirik";
             this.TxtElektirik.Size = new System.Drawing.Size(285, 30);
-            this.TxtElektirik.TabIndex = 42;
+            this.TxtElektirik.TabIndex = 1;
             // 
             // label1
             // 
@@ -70,7 +70,7 @@
             this.TxtSu.Location = new System.Drawing.Point(144, 72);
             this.TxtSu.Name = "TxtSu";
             this.TxtSu.Size = new System.Drawing.Size(285, 30);
-            this.TxtSu.TabIndex = 44;
+            this.TxtSu.TabIndex = 2;
             // 
             // label2
             // 
@@ -88,7 +88,7 @@
             this.TxtDogalGaz.Location = new System.Drawing.Point(144, 108);
             this.TxtDogalGaz.Name = "TxtDogalGaz";
             this.TxtDogalGaz.Size = new System.Drawing.Size(285, 30);
-            this.TxtDogalGaz.TabIndex = 46;
+            this.TxtDogalGaz.TabIndex = 3;
             // 
             // label3
             // 
@@ -106,7 +106,7 @@
             this.Txtinternet.Location = new System.Drawing.Point(144, 144);
             this.Txtinternet.Name = "Txtinternet";
             this.Txtinternet.Size = new System.Drawing.Size(285, 30);
-            this.Txtinternet.TabIndex = 48;
+            this.Txtinternet.TabIndex = 4;
             // 
             // label4
             // 
@@ -124,7 +124,7 @@
             this.TxtGida.Location = new System.Drawing.Point(144, 180);
             this.TxtGida.Name = "TxtGida";
             this.TxtGida.Size = new System.Drawing.Size(285, 30);
-            this.TxtGida.TabIndex = 50;
+            this.TxtGida.TabIndex = 5;
             // 
             // label5
             // 
@@ -142,7 +142,7 @@
             this.TxtPersonel.Location = new System.Drawing.Point(144, 216);
             this.TxtPersonel.Name = "TxtPersonel";
             this.TxtPersonel.Size = new System.Drawing.Size(285, 30);
-            this.TxtPersonel.TabIndex = 52;
+            this.TxtPersonel.TabIndex = 6;
             // 
             // label6
             // 
@@ -160,7 +160,7 @@
             this.TxtDiger.Location = new System.Drawing.Point(144, 252);
             this.TxtDiger.Name = "TxtDiger";
             this.TxtDiger.Size = new System.Drawing.Size(285, 30);
-            this.TxtDiger.TabIndex = 54;
+            this.TxtDiger.TabIndex = 7;
             // 
             // label7
             // 

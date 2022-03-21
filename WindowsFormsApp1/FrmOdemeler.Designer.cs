@@ -62,7 +62,7 @@
             this.TxtOgrid.Location = new System.Drawing.Point(120, 46);
             this.TxtOgrid.Name = "TxtOgrid";
             this.TxtOgrid.Size = new System.Drawing.Size(233, 30);
-            this.TxtOgrid.TabIndex = 0;
+            this.TxtOgrid.TabIndex = 1;
             // 
             // label1
             // 
@@ -90,7 +90,7 @@
             this.TxtOdenen.Location = new System.Drawing.Point(120, 159);
             this.TxtOdenen.Name = "TxtOdenen";
             this.TxtOdenen.Size = new System.Drawing.Size(233, 30);
-            this.TxtOdenen.TabIndex = 2;
+            this.TxtOdenen.TabIndex = 4;
             // 
             // label3
             // 
@@ -109,7 +109,7 @@
             this.TxtKalan.Location = new System.Drawing.Point(120, 195);
             this.TxtKalan.Name = "TxtKalan";
             this.TxtKalan.Size = new System.Drawing.Size(233, 30);
-            this.TxtKalan.TabIndex = 4;
+            this.TxtKalan.TabIndex = 5;
             // 
             // dataGridView1
             // 
@@ -204,7 +204,7 @@
             this.TxtSoyad.Location = new System.Drawing.Point(120, 119);
             this.TxtSoyad.Name = "TxtSoyad";
             this.TxtSoyad.Size = new System.Drawing.Size(233, 30);
-            this.TxtSoyad.TabIndex = 10;
+            this.TxtSoyad.TabIndex = 3;
             // 
             // label5
             // 
@@ -222,7 +222,7 @@
             this.TxtAd.Location = new System.Drawing.Point(120, 83);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(233, 30);
-            this.TxtAd.TabIndex = 8;
+            this.TxtAd.TabIndex = 2;
             // 
             // label6
             // 
@@ -240,7 +240,7 @@
             this.TxtOdenenAy.Location = new System.Drawing.Point(120, 235);
             this.TxtOdenenAy.Name = "TxtOdenenAy";
             this.TxtOdenenAy.Size = new System.Drawing.Size(233, 30);
-            this.TxtOdenenAy.TabIndex = 12;
+            this.TxtOdenenAy.TabIndex = 6;
             // 
             // FrmOdemeler
             // 

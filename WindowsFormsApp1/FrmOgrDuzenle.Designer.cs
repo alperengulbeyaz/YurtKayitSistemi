@@ -53,6 +53,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.TxtOgrid = new System.Windows.Forms.TextBox();
+            this.BtnOgrSil = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -67,7 +68,7 @@
             // 
             // BtnGuncelle
             // 
-            this.BtnGuncelle.Location = new System.Drawing.Point(193, 694);
+            this.BtnGuncelle.Location = new System.Drawing.Point(78, 697);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(180, 47);
             this.BtnGuncelle.TabIndex = 39;
@@ -160,7 +161,7 @@
             this.RchAdres.Location = new System.Drawing.Point(180, 556);
             this.RchAdres.Name = "RchAdres";
             this.RchAdres.Size = new System.Drawing.Size(285, 116);
-            this.RchAdres.TabIndex = 30;
+            this.RchAdres.TabIndex = 12;
             this.RchAdres.Text = "";
             // 
             // MskVeliTelefon
@@ -170,7 +171,7 @@
             this.MskVeliTelefon.Mask = "(999) 000-0000";
             this.MskVeliTelefon.Name = "MskVeliTelefon";
             this.MskVeliTelefon.Size = new System.Drawing.Size(285, 30);
-            this.MskVeliTelefon.TabIndex = 29;
+            this.MskVeliTelefon.TabIndex = 11;
             // 
             // TxtVeliAdSoyad
             // 
@@ -178,7 +179,7 @@
             this.TxtVeliAdSoyad.Location = new System.Drawing.Point(180, 459);
             this.TxtVeliAdSoyad.Name = "TxtVeliAdSoyad";
             this.TxtVeliAdSoyad.Size = new System.Drawing.Size(285, 30);
-            this.TxtVeliAdSoyad.TabIndex = 28;
+            this.TxtVeliAdSoyad.TabIndex = 10;
             // 
             // TxtMail
             // 
@@ -186,7 +187,7 @@
             this.TxtMail.Location = new System.Drawing.Point(180, 356);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(285, 30);
-            this.TxtMail.TabIndex = 27;
+            this.TxtMail.TabIndex = 8;
             // 
             // CmbOdaNo
             // 
@@ -195,7 +196,7 @@
             this.CmbOdaNo.Location = new System.Drawing.Point(180, 404);
             this.CmbOdaNo.Name = "CmbOdaNo";
             this.CmbOdaNo.Size = new System.Drawing.Size(285, 32);
-            this.CmbOdaNo.TabIndex = 26;
+            this.CmbOdaNo.TabIndex = 9;
             // 
             // CmbBolum
             // 
@@ -204,7 +205,7 @@
             this.CmbBolum.Location = new System.Drawing.Point(180, 305);
             this.CmbBolum.Name = "CmbBolum";
             this.CmbBolum.Size = new System.Drawing.Size(285, 32);
-            this.CmbBolum.TabIndex = 25;
+            this.CmbBolum.TabIndex = 7;
             // 
             // MskDogum
             // 
@@ -213,7 +214,7 @@
             this.MskDogum.Mask = "00/00/0000";
             this.MskDogum.Name = "MskDogum";
             this.MskDogum.Size = new System.Drawing.Size(285, 30);
-            this.MskDogum.TabIndex = 24;
+            this.MskDogum.TabIndex = 6;
             this.MskDogum.ValidatingType = typeof(System.DateTime);
             // 
             // MskOgrTelefon
@@ -223,7 +224,7 @@
             this.MskOgrTelefon.Mask = "(999) 000-0000";
             this.MskOgrTelefon.Name = "MskOgrTelefon";
             this.MskOgrTelefon.Size = new System.Drawing.Size(285, 30);
-            this.MskOgrTelefon.TabIndex = 23;
+            this.MskOgrTelefon.TabIndex = 5;
             // 
             // MskTC
             // 
@@ -232,7 +233,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(285, 30);
-            this.MskTC.TabIndex = 22;
+            this.MskTC.TabIndex = 4;
             // 
             // TxtOgrSoyad
             // 
@@ -240,7 +241,7 @@
             this.TxtOgrSoyad.Location = new System.Drawing.Point(180, 117);
             this.TxtOgrSoyad.Name = "TxtOgrSoyad";
             this.TxtOgrSoyad.Size = new System.Drawing.Size(285, 30);
-            this.TxtOgrSoyad.TabIndex = 21;
+            this.TxtOgrSoyad.TabIndex = 3;
             // 
             // TxtOgrAd
             // 
@@ -248,7 +249,7 @@
             this.TxtOgrAd.Location = new System.Drawing.Point(180, 77);
             this.TxtOgrAd.Name = "TxtOgrAd";
             this.TxtOgrAd.Size = new System.Drawing.Size(285, 30);
-            this.TxtOgrAd.TabIndex = 20;
+            this.TxtOgrAd.TabIndex = 2;
             // 
             // label3
             // 
@@ -286,13 +287,24 @@
             this.TxtOgrid.Location = new System.Drawing.Point(180, 31);
             this.TxtOgrid.Name = "TxtOgrid";
             this.TxtOgrid.Size = new System.Drawing.Size(285, 30);
-            this.TxtOgrid.TabIndex = 40;
+            this.TxtOgrid.TabIndex = 1;
+            // 
+            // BtnOgrSil
+            // 
+            this.BtnOgrSil.Location = new System.Drawing.Point(285, 697);
+            this.BtnOgrSil.Name = "BtnOgrSil";
+            this.BtnOgrSil.Size = new System.Drawing.Size(180, 47);
+            this.BtnOgrSil.TabIndex = 41;
+            this.BtnOgrSil.Text = "Sil";
+            this.BtnOgrSil.UseVisualStyleBackColor = true;
+            this.BtnOgrSil.Click += new System.EventHandler(this.BtnOgrSil_Click);
             // 
             // FrmOgrDuzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 779);
+            this.Controls.Add(this.BtnOgrSil);
             this.Controls.Add(this.TxtOgrid);
             this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.label11);
@@ -353,5 +365,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox TxtOgrid;
+        private System.Windows.Forms.Button BtnOgrSil;
     }
 }

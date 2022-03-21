@@ -19,7 +19,33 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        
         public string id, ad, soyad, TC, telefon, dogum, bolum;
+
+        private void BtnOgrSil_Click(object sender, EventArgs e)
+        {
+            //Öğrenci Silme
+            try
+            {
+                SqlCommand komutsil = new SqlCommand("delete from Ogrenci where ogrid=@k1", bgl.baglanti());
+                komutsil.Parameters.AddWithValue("@k1", TxtOgrid.Text);
+                komutsil.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Kayıt başarıyla silindi!");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Hata!");
+            }
+
+            SqlCommand komutoda = new SqlCommand("update odalar set OdaAktif=OdaAktif-1 where OdaNo=@oda", bgl.baglanti());
+            komutoda.Parameters.AddWithValue("@oda", CmbOdaNo.Text);
+            komutoda.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            
+        }
+
         public string mail,odano,veliadsoyad,velitelefon,adres;
 
 
@@ -57,6 +83,21 @@ namespace WindowsFormsApp1
 
         private void FrmOgrDuzenle_Load(object sender, EventArgs e)
         {
+            SqlCommand komut = new SqlCommand("Select BolumAd  From Bolumler", bgl.baglanti());
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                CmbBolum.Items.Add(oku[0].ToString());
+            }
+            bgl.baglanti().Close();
+
+            SqlCommand komut2 = new SqlCommand("Select OdaNo  From Odalar where OdaKapasite !=OdaAktif", bgl.baglanti());
+            SqlDataReader oku2 = komut2.ExecuteReader();
+            while (oku2.Read())
+            {
+                CmbOdaNo.Items.Add(oku2[0].ToString());
+            }
+            bgl.baglanti().Close();
             TxtOgrid.Text = id;
             TxtOgrAd.Text = ad;
             TxtOgrSoyad.Text = soyad;
