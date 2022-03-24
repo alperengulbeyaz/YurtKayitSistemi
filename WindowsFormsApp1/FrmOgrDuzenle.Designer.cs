@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOgrDuzenle));
             this.label1 = new System.Windows.Forms.Label();
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -330,6 +331,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmOgrDuzenle";
             this.Text = "Öğrenci Düzenle";
             this.Load += new System.EventHandler(this.FrmOgrDuzenle_Load);

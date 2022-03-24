@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOgrListe));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yurtKayitDataSet3 = new WindowsFormsApp1.YurtKayitDataSet3();
-            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ogrenciTableAdapter = new WindowsFormsApp1.YurtKayitDataSet3TableAdapters.OgrenciTableAdapter();
             this.ogridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,9 +43,12 @@
             this.ogrVeliAdSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrVeliTelefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrVeliAdresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtKayitDataSet3 = new WindowsFormsApp1.YurtKayitDataSet3();
+            this.ogrenciTableAdapter = new WindowsFormsApp1.YurtKayitDataSet3TableAdapters.OgrenciTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -77,20 +77,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1242, 533);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // yurtKayitDataSet3
-            // 
-            this.yurtKayitDataSet3.DataSetName = "YurtKayitDataSet3";
-            this.yurtKayitDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrenciBindingSource
-            // 
-            this.ogrenciBindingSource.DataMember = "Ogrenci";
-            this.ogrenciBindingSource.DataSource = this.yurtKayitDataSet3;
-            // 
-            // ogrenciTableAdapter
-            // 
-            this.ogrenciTableAdapter.ClearBeforeFill = true;
             // 
             // ogridDataGridViewTextBoxColumn
             // 
@@ -201,6 +187,20 @@
             this.ogrVeliAdresDataGridViewTextBoxColumn.Name = "ogrVeliAdresDataGridViewTextBoxColumn";
             this.ogrVeliAdresDataGridViewTextBoxColumn.Width = 117;
             // 
+            // ogrenciBindingSource
+            // 
+            this.ogrenciBindingSource.DataMember = "Ogrenci";
+            this.ogrenciBindingSource.DataSource = this.yurtKayitDataSet3;
+            // 
+            // yurtKayitDataSet3
+            // 
+            this.yurtKayitDataSet3.DataSetName = "YurtKayitDataSet3";
+            this.yurtKayitDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciTableAdapter
+            // 
+            this.ogrenciTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmOgrListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,11 +210,11 @@
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmOgrListe";
-            this.Text = "FrmOgrListe";
+            this.Text = "Öğrenci Liste";
             this.Load += new System.EventHandler(this.FrmOgrListe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet3)).EndInit();
             this.ResumeLayout(false);
 
         }

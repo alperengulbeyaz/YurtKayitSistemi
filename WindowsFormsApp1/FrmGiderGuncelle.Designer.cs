@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGiderGuncelle));
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.TxtDiger = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -224,10 +225,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtElektirik);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmGiderGuncelle";
-            this.Text = "FrmGiderGuncelle";
+            this.Text = "Gider Düzenleme";
             this.Load += new System.EventHandler(this.FrmGiderGuncelle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
